@@ -1,0 +1,111 @@
+nav {
+    font-size: 0.8rem;
+    z-index: 4;
+}
+
+.navName {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8rem;
+    left: 0.5rem;
+    top: 0.5rem;
+    z-index: 4;
+}
+
+nav a {
+    color: var(--text-color)
+}
+
+.iconNavbar {
+    display: none;
+
+}
+
+.navMenuRight {
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    line-height: 1rem;
+    text-align: end;
+    z-index: 4;
+}
+
+.navMenuBottom {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    line-height: 1rem;
+    text-align: start;
+    z-index: 4;
+}
+
+
+
+/* Breakpoints */
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navName {
+        position: absolute;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .iconNavbar {
+        display: block;
+        font-size: 2rem;
+        color: var(--text-color);
+    }
+
+    .textNavbar {
+        display: none;
+    }
+
+    .navMenuRight, 
+    .navMenuBottom {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 0.7rem;
+        align-items: center;
+    }
+
+    .containerNav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        z-index: 4;
+        bottom: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        gap: 0.7rem;
+        background: #3131315f;
+        backdrop-filter: blur(7px);
+
+    }
+
+    .iconActive {
+        background-color: rgb(210, 210, 210);
+        padding: 0.3rem;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+}
